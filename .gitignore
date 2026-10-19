@@ -1,4 +1,32 @@
+# Local Python environments and temporary reading tools
 .venv/
+venv/
+env/
 .pdf-tools/
+
+# Python, Jupyter, and test caches
 __pycache__/
 *.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Notebook execution outputs and downloaded datasets (recreated by training)
+build/
+.cache/
+scikit_learn_data/
+*.log
+
+# Private configuration and operating system files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Keep the trained artifact, example requests, documentation, and notebook tracked.
