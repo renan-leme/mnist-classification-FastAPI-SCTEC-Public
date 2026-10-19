@@ -1,0 +1,72 @@
+{
+  "model_name": "MLP",
+  "model_version": "1.0.0",
+  "selection_rule": "Highest validation accuracy, chosen before final test evaluation",
+  "validation_accuracy": {
+    "KNN": 0.9722857142857143,
+    "Random Forest": 0.968,
+    "MLP": 0.9745714285714285
+  },
+  "selected_parameters": {
+    "hidden_layer_sizes": [
+      64
+    ],
+    "learning_rate_init": 0.001
+  },
+  "test_metrics": {
+    "model": "MLP",
+    "accuracy": 0.9730714285714286,
+    "weighted_precision": 0.9731054940302934,
+    "weighted_recall": 0.9730714285714286,
+    "weighted_f1": 0.9730467943181353,
+    "training_time_seconds": 20.154101399999945,
+    "inference_time_seconds": 0.03385359999992943
+  },
+  "model_comparison": [
+    {
+      "model": "KNN",
+      "accuracy": 0.9732142857142857,
+      "weighted_precision": 0.9734082421286,
+      "weighted_recall": 0.9732142857142857,
+      "weighted_f1": 0.9731854495456375,
+      "training_time_seconds": 0.058565700000144716,
+      "inference_time_seconds": 14.597241200000099
+    },
+    {
+      "model": "MLP",
+      "accuracy": 0.9730714285714286,
+      "weighted_precision": 0.9731054940302934,
+      "weighted_recall": 0.9730714285714286,
+      "weighted_f1": 0.9730467943181353,
+      "training_time_seconds": 20.154101399999945,
+      "inference_time_seconds": 0.03385359999992943
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9681428571428572,
+      "weighted_precision": 0.9681422827438401,
+      "weighted_recall": 0.9681428571428572,
+      "weighted_f1": 0.9681222797053415,
+      "training_time_seconds": 18.91821200000004,
+      "inference_time_seconds": 0.38104489999977886
+    }
+  ],
+  "original_notebook_best_model": "KNN",
+  "notebook_sha256": "4589961d3bf59aaac3859efc95184b344f8c27112cd102f30fda12c2dad8483c",
+  "dataset": "OpenML mnist_784, version 1",
+  "split": {
+    "train": 49000,
+    "validation": 7000,
+    "test": 14000
+  },
+  "final_fit": "56,000 development samples; MLP early stopping holds out 10% internally",
+  "input": "784 row-major grayscale pixels, each from 0 to 255",
+  "python_version": "3.11.7",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.6.0"
+  },
+  "custom_images_processed": 0
+}
